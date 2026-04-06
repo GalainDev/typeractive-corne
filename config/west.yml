@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: galaindev
+      url-base: https://github.com/GalainDev
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+    - name: nice-view-gem
+      remote: galaindev
+      revision: 7794ebf7f75d7e16cb05240bcffe6c5a45ef5b44
   self:
     path: config
